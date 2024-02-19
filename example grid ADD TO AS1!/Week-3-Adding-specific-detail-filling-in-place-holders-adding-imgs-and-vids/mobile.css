@@ -14,14 +14,7 @@
     border-top: 0.2em solid #fff;
 }
 
-nav {
-    display: block;
-    background-color: yellow;
-    position: fixed;top: 0;
-    left: 50%;
-    width: 50%;
-    height: 100vh;
-}
+
 
 #clicked .on {
     display: block;
@@ -37,4 +30,17 @@ nav {
 
 #clicked:target .off {
     display: block;
+}
+
+#clicked:target nav{
+    display: block;
+}
+
+nav {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    width: 50%;
+    height: 100vh;
 }
